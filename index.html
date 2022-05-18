@@ -21,9 +21,10 @@
                     <source src="renxi.mp3" type="audio/mp3" />
                     <embed height="100" width="100" src="renxi.mp3" />
             </audio>
+            <!-- <audio id = "music" src=""./renxi.mp3" loop autoplay></audio> -->
             <div id="wrap">
                 <div id="text">
-                    <div id="code"> <font color="#FF0000"> <span class="say">亲爱的宝宝，我爱你</span><br>
+                    <div id="code"> <font color="#FF0000"> <span class="say">亲爱的夏雨宝宝，我爱你</span><br>
                       <span class="say"> 我知道我不会甜言蜜语，</span><br>
                       <span class="say"> 但是我会用行动证明一切</span><br>
                       <span class="say">你说我啰嗦，</span><br>             
@@ -108,6 +109,14 @@
         var hold = 1;
 
         canvas.click(function(e) {
+            // var audio = document.getElementById("music");
+            // if(audio.paused){
+            //     audio.play();
+            // }
+            // else{
+            //     audio.play();
+            //     audio.currentTime = 0;
+            // }
             var offset = canvas.offset(), x, y;
             x = e.pageX - offset.left;
             y = e.pageY - offset.top;
@@ -182,7 +191,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    together.setFullYear(2010,1 , 15); 			//时间年月日
+		    together.setFullYear(2022,03, 09); 			//时间年月日
 		    together.setHours(16);						//小时	
 		    together.setMinutes(53);					//分钟
 		    together.setSeconds(0);					//秒前一位
